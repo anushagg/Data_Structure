@@ -16,18 +16,9 @@ class Solution {
             current = current.next;
         }
         current = head;
-        if(count/2 == 0){
-            result = count/2 + 1;
-        }
-        else{
-            result = count/2 + 1;
-        }
         int resultcount = 0;
-        while(current!= null){
+        while(resultcount != count/2){
             resultcount++;
-            if(resultcount == result){
-                return current;
-            }
             current = current.next;
         }
         return current;
